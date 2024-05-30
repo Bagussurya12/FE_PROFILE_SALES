@@ -1,5 +1,5 @@
 <template>
-  <section id="news" class="pt-20 pb-20 bg-gray-100">
+  <section id="news" class="pt-20 pb-20 bg-white">
     <div class="container mx-auto px-6">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold text-gray-800">Latest News</h2>
@@ -12,7 +12,7 @@
             <h3 class="text-xl font-semibold text-gray-800">{{ post.title }}</h3>
             <p class="text-gray-600 mt-2">{{ post.excerpt }}</p>
             <div class="mt-4">
-              <router-link :to="'/news/' + post.id" class="text-indigo-600 hover:text-indigo-800">Read more</router-link>
+              <!-- <router-link :to="'/news/' + post.id" class="text-indigo-600 hover:text-indigo-800">Read more</router-link> -->
             </div>
           </div>
         </div>
@@ -20,7 +20,6 @@
     </div>
   </section>
 </template>
-
 <script>
 export default {
   data() {
@@ -70,15 +69,11 @@ export default {
 
 <style scoped>
 #news {
-  background-image: url("https://via.placeholder.com/1920x600");
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: white;
 }
 
 #news h2,
 #news p {
-  color: #fff;
+  color: #4a5568; /* Warna teks gelap */
 }
 </style>
