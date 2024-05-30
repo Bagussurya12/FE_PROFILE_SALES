@@ -2,8 +2,8 @@
   <section id="news" class="pt-20 pb-20 bg-white">
     <div class="container mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-800">Latest News</h2>
-        <p class="text-gray-600 mt-4">Stay updated with the latest news from our blog</p>
+        <h2 class="text-6xl font-bold text-Dark">Latest News</h2>
+        <p class="text-Hijau mt-4">Stay updated with the latest news from our blog</p>
       </div>
       <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         <div v-for="post in posts" :key="post.id" class="bg-white rounded-lg overflow-hidden shadow-lg">
