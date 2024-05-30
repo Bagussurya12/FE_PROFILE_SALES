@@ -18,25 +18,25 @@
         <nav id="navbar-menu" class="hidden lg:flex items-center w-full lg:w-auto">
           <ul class="block lg:flex lg:space-x-4">
             <li class="group">
-              <a href="#home" class="text-base text-Hijau font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Dark">Home</a>
+              <a href="#home" class="text-base text-white font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Hijau">Home</a>
             </li>
             <li class="group">
-              <a href="#about" class="text-base text-Hijau font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Dark">Contact Us</a>
+              <a href="#about" class="text-base text-white font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Hijau">Contact Us</a>
             </li>
             <li class="group">
-              <a href="#portofolio" class="text-base text-Hijau font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Dark">Virtual Tour</a>
+              <a href="#portofolio" class="text-base text-white font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Hijau">Virtual Tour</a>
             </li>
             <li class="group">
-              <a href="#location" class="text-base text-Hijau font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Dark">Location</a>
+              <a href="#location" class="text-base text-white font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Hijau">Location</a>
             </li>
             <li class="group">
-              <a href="#blog" class="text-base text-Hijau font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Dark">About Us</a>
+              <a href="#blog" class="text-base text-white font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Hijau">About Us</a>
             </li>
             <li class="group">
-              <a href="#contact" class="text-base text-Hijau font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Dark">Gallery</a>
+              <a href="#contact" class="text-base text-white font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Hijau">Gallery</a>
             </li>
             <li class="group">
-              <a href="#contact" class="text-base text-Hijau font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Dark">News</a>
+              <a href="#contact" class="text-base text-white font-bold py-2 mx-2 lg:mx-4 flex group-hover:text-Hijau">News</a>
             </li>
           </ul>
         </nav>

@@ -12,6 +12,7 @@
             <h3 class="text-xl font-semibold text-gray-800">{{ post.title }}</h3>
             <p class="text-gray-600 mt-2">{{ post.excerpt }}</p>
             <div class="mt-4">
+              <!-- Uncomment the following line if you are using Vue Router -->
               <!-- <router-link :to="'/news/' + post.id" class="text-indigo-600 hover:text-indigo-800">Read more</router-link> -->
             </div>
           </div>
@@ -20,6 +21,7 @@
     </div>
   </section>
 </template>
+
 <script>
 export default {
   data() {
@@ -72,8 +74,11 @@ export default {
   background-color: white;
 }
 
-#news h2,
+#news h2 {
+  color: #1a202c; /* Darker color for better contrast */
+}
+
 #news p {
-  color: #4a5568; /* Warna teks gelap */
+  color: #718096; /* Slightly lighter color for the subtitle */
 }
 </style>

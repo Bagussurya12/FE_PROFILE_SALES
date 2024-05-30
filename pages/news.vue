@@ -1,6 +1,6 @@
 <template>
   <Navbar> </Navbar>
-  <section id="contact" class="pb-10 pt-10 bg-white relative -mb-10">
+  <section id="contact" class="pb-10 pt-20 bg-white relative mb-10">
     <img src="../assets/images/News.png" alt="" class="darken-filter" />
     <h3 class="font-bold lg:text-8xl md:text-6xl sm:text-6xl mb-10 overlay-text ml-10">News</h3>
     <br />
