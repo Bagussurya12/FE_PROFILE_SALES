@@ -104,6 +104,10 @@
           </ul>
         </div>
       </div>
+      <div class="w-full pt-10 border-t border-slate-700">
+        <div class="flex items-center justify-center mb-5"></div>
+        <p class="text-lg font-semibold text-slate-500 text-center">Copy Right &copy; <a href="#home" class="font-bold text-Hijau">OCBD </a> 2024. All Right Reserved</p>
+      </div>
     </div>
   </footer>
 </template>
