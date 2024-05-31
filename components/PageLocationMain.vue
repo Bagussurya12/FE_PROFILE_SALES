@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <!-- Mengubah grid-cols-1 menjadi grid-cols-2 -->
         <div class="px-4 py-10 mb-5 lg:mb-0">
-          <h4 class="text-white font-semibold lg:text-4xl md:text-2xl sm:text-xl mb-2">Why choosing Pine Residence OCBD?</h4>
+          <h4 class="text-white font-semibold lg:text-4xl md:text-2xl sm:text-xl mb-2">Why choosing Pine Residence OCBD?🤔</h4>
           <p class="text-white text-lg">
             Pine Residence, located in the OCBD area, is situated in the heart of Bogor with direct access to the BORR toll road, ensuring a high investment value. The strategic advantages of OCBD are
             further enhanced by its surroundings, which offer a variety of facilities including healthcare, shopping, education, and lifestyle amenities.
