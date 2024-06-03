@@ -14,22 +14,22 @@
           <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
           <ul class="text-slate-300">
             <li>
-              <a href="#home" class="inline-block text-base text-white hover:text-Hijau">Home</a>
+              <a href="/" class="inline-block text-base text-white hover:text-Hijau">Home</a>
             </li>
             <li>
-              <a href="#contact" class="inline-block text-base text-white hover:text-Hijau">Contact Us</a>
+              <a href="/contact" class="inline-block text-base text-white hover:text-Hijau">Contact Us</a>
             </li>
             <li>
-              <a href="#location" class="inline-block text-base text-white hover:text-Hijau">Location</a>
+              <a href="/location" class="inline-block text-base text-white hover:text-Hijau">Location</a>
             </li>
             <li>
-              <a href="#About" class="inline-block text-base text-white hover:text-Hijau">About Us</a>
+              <a href="/about" class="inline-block text-base text-white hover:text-Hijau">About Us</a>
             </li>
             <li>
-              <a href="#gallery" class="inline-block text-base text-white hover:text-Hijau">Gallery</a>
+              <a href="/gallery" class="inline-block text-base text-white hover:text-Hijau">Gallery</a>
             </li>
             <li>
-              <a href="#news" class="inline-block text-base text-white hover:text-Hijau">News</a>
+              <a href="/news" class="inline-block text-base text-white hover:text-Hijau">News</a>
             </li>
           </ul>
         </div>
@@ -106,7 +106,7 @@
       </div>
       <div class="w-full pt-10 border-t border-slate-700">
         <div class="flex items-center justify-center mb-5"></div>
-        <p class="text-lg font-semibold text-slate-500 text-center">Copy Right &copy; <a href="#home" class="font-bold text-Hijau">OCBD </a> 2024. All Right Reserved</p>
+        <p class="text-lg font-semibold text-slate-500 text-center">Copy Right &copy; <a href="/home" class="font-bold text-Hijau">OCBD </a> 2024. All Right Reserved</p>
       </div>
     </div>
   </footer>
