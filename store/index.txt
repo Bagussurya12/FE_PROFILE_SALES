@@ -1,0 +1,26 @@
+// store/index.js
+export const state = () => ({
+  // state global, jika ada
+});
+
+export const mutations = {
+  // mutations global, jika ada
+};
+
+export const actions = {
+  // actions global, jika ada
+};
+
+// store/index.js or store/index.ts
+import Vuex from "vuex";
+import { auth } from "./auth";
+
+const createStore = () => {
+  return new Vuex.Store({
+    modules: {
+      auth,
+    },
+  });
+};
+
+export default createStore;

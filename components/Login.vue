@@ -10,24 +10,29 @@
       <!-- Right Section (Login Form) -->
       <div class="flex flex-col items-center justify-center w-full p-8 md:w-2/3 lg:w-1/2">
         <h2 class="text-4xl font-bold mb-6 text-gray-900">Login</h2>
-        <form @submit.prevent="login" class="w-full">
+        <form @submit.prevent="onSubmit" class="w-full">
           <div class="mb-4">
             <label for="email" class="block text-gray-700 mb-2">Email:</label>
-            <input v-model="email" type="email" id="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required />
+            <input v-model="form.email" type="email" id="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required />
           </div>
           <div class="mb-6">
             <label for="password" class="block text-gray-700 mb-2">Password:</label>
-            <input v-model="password" type="password" id="password" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required />
+            <input v-model="form.password" type="password" id="password" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required />
           </div>
-          <button type="submit" class="w-full bg-Dark text-Hijau py-2 px-4 rounded-lg hover:bg-Hijau hover:text-Dark transition duration-300">Login</button>
+          <button type="submit" class="w-full bg-Dark text-Hijau py-2 px-4 rounded-lg hover:bg-Hijau hover:text-Dark transition duration-300" :disabled="isDisable">
+            <span v-if="isLoading">Loading...</span>
+            <span v-else>Login</span>
+          </button>
         </form>
+        <div v-if="isError" class="mt-4 text-red-500">
+          {{ message }}
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { mapMutations } from "vuex";
 export default {
   middleware: ["unauthenticated"],
   head: {
@@ -35,6 +40,7 @@ export default {
   },
   data() {
     return {
+      isLoading: false,
       isDisable: false,
       isError: false,
       message: "",
@@ -45,21 +51,31 @@ export default {
     };
   },
   methods: {
-    ...mapMutations("auth", {
-      setFullName: "setFullname",
-      setAccessToken: "setAccessToken",
-      setRefreshToken: "setRefreshToken",
-    }),
-    storeWelcomeScreen() {
-      localStorage.setItem("welcomeScreen", true);
+    async onSubmit() {
+      try {
+        this.isLoading = true;
+
+        const auth = await this.$axios.post("/login", this.form);
+
+        this.isLoading = false;
+        console.log(auth);
+        this.$router.push("/dashboard");
+        // this.$router.push({ name: "dashboard___" + this.$i18n.locale }); //Redirect To Home Page
+      } catch (error) {
+        this.isError = true;
+        this.isDisable = false;
+
+        this.message = error.response ? error.response.data.message : "SERVER_ERROR";
+        this.isLoading = false;
+        console.error(error);
+      }
     },
-    login() {
-      this.isDisable = true;
-      console.log(this.form);
-      this.$axios.$post('')
-      // Implement your login logic here
-      console.log(`Email: ${this.email}, Password: ${this.password}`);
-    },
+  },
+  mounted() {
+    if (this.$route.params.message === "AUTH_REQUIRED") {
+      this.message = this.$route.params.message;
+      this.isError = true;
+    }
   },
 };
 </script>

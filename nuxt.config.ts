@@ -1,9 +1,12 @@
 // nuxt.config.ts
+import axiosPlugin from "./plugins/axios.js";
+
 export default defineNuxtConfig({
   ssr: false,
   components: true,
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+
   css: ["@/assets/css/tailwind.css"],
   postcss: {
     plugins: {
@@ -11,10 +14,17 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  plugins: [{ src: "~/plugins/axios.ts" }],
+  plugins: [
+    { src: "~/plugins/axios.js" },
+    // Other plugins...
+  ],
   app: {
     head: {
-      title: "Pine Residence",
+      titleTemplate: "Pine Residence - %s",
+      title: "Home",
     },
+  },
+  runtimeConfig: {
+    currencyKey: process.env.API_KEY,
   },
 });
