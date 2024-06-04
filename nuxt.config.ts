@@ -16,6 +16,8 @@ export default defineNuxtConfig({
   },
   plugins: [
     { src: "~/plugins/axios.js" },
+    { src: "~/plugins/persistedState.js" },
+    // { src: "~/plugins/axios.js" },
     // Other plugins...
   ],
   app: {
