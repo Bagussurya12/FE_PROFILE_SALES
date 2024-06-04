@@ -1,10 +1,6 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
-  server: {
-    port: 8000,
-  },
   ssr: false,
-  title: "Hello Nuxt",
   components: true,
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
@@ -15,7 +11,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  axios: {
-    baseURL: process.env.API_URL,
+  plugins: [{ src: "~/plugins/axios.ts" }],
+  app: {
+    head: {
+      title: "Pine Residence",
+    },
   },
 });

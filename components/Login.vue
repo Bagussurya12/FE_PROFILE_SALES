@@ -56,6 +56,7 @@ export default {
     login() {
       this.isDisable = true;
       console.log(this.form);
+      this.$axios.$post('')
       // Implement your login logic here
       console.log(`Email: ${this.email}, Password: ${this.password}`);
     },
